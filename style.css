@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import "normalize.css";
+@font-face {
+  font-family: myFont; 
+  src: url(..//foremost/Foremost\ Regular.ttf);
+}
+@font-face {
+  font-family: mySecFont; 
+  src: url(..//dungeon_sn/DUNGRG__.TTF); 
+}
+
+:root {
+    --color-primary: white;
+    --color-light: lightblue;
+    --color-secondary: black;
+}
+
+.par1 {
+    color:white
+}
+
+html {
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--color-light);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-primary);
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: solid black 1px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.btn.btn-primary {
+    background-color: var(--color-primary);
+    color: black;
+}
+
+.btn.btn-primary:hover {
+    background-color: black;
+    color: var(--color-primary);
+}
+
+.btn.btn-outline-primary {
+    background-color: white;
+    color: var(--color-secondary);
+}
+
+.btn.btn-outline-primary:hover {
+    background-color: var(--color-secondary);
+    color: white;
+}
+
+.btn-light {
+    background-color: var(--color-light);
+    color: black;
+}
+
+.btn-light:hover {
+    background-color: black;
+    color: var(--color-light);
+}
+
+form div:has(*[required]) label::after {
+    content: "*";
+    color: red;
+}
+
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url('/pics/Screenshot\ 2025-09-06\ 175210.png');
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+}
+
+.main-header .logo {
+    font-size: 2rem; 
+    font-family: myFont; 
+}
+
+.main-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 0;
+    background-color: var(--color-light);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    z-index: 1000;
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-header nav > ul {
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 2rem;
+    justify-content: end;
+}
+
+.lowk-good-font-ffs {
+        display: flex;
+    justify-content: end;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+
+.main-header nav > ul >li  a {
+    display: flex;
+    justify-content: end;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.social-networks {
+    display: flex;
+    gap :5px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.social-networks a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    color: white;
+}
+
+.social-networks a svg {
+    height: 100%;
+    width: 100%;
+}
+
+.image {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    float:left;
+}
+
+.span95::after {
+    width: 95%;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    color: black;
+}
+
+.span80::after {
+    width: 80%;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+}
+
+.span90::after {
+    width: 90%;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+}
+
+.skills{
+    color: white;
+    background-color: black;    
+    display: flex;
+    align-content: center;
+    padding: 0px 10px 0px 20px;
+}
+
+.skillsh{
+    color: black;
+    background-color: black;    
+    display: flex;
+    align-content: center;
+    padding: 0px 10px 0px 20px;
+}
+
+.item{
+    padding: 2px 2px;
+}
+
+.skills-progress{
+    width: 100%;
+    border-radius: 5px;
+    height:30px;
+    background: #f7f7f7;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.skills-progress span {
+    display: flex;
+    align-items: center;
+}
+
+.contain {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+#grid div {
+    align-items: center;
+}
+
+#languages {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap:40px
+}
+
+.bg-light {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 60px 20px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    border: #f7f7f7;
+    gap: 15px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    flex: 1 1 calc(33.33% - 20px);
+    min-width: 280px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card div {
+    align-items: center;
+    text-align: center;
+}
+
+.card img {
+    width: 40px;
+    height: 40px;
+}
+
+@media screen and (max-width: 900px) {
+    .card {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        width: 600px;
+    }
+    .languages {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+    .languages {
+        grid-template-columns: 1fr;
+    }
+    .card {
+        flex: 1 1 100%;
+    }
+}
+
+.filters ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    list-style-type: none;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.projects .project {
+    position: relative;
+}
+
+.projects .project:hover .overlay {
+    opacity:1;
+}
+
+.projects .project img {
+    height: 100%;
+    width:100%;
+}
+
+.projects .project .overlay {
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: 1s;
+}
+
+.projects h3 {
+    color: black;
+}
+
+.languages {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.languages .language {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    transition: transform 0.5s;
+}
+
+.languages .language:hover {
+    transform: translateY(-10px);
+}
+
+.languages .language:hover img {
+    filter: grayscale(0%);
+    transform: scale(1.2);
+}
+
+.languages .language img {
+    width: 100px;
+    filter: grayscale(100%);
+    transform: scale(1);
+    transition: filter 0.5s, transform 0.5s;
+}
+
+.languages .language p {
+    margin: 0;
+}
+
+.svg {
+    display: flex;
+    justify-content: center;
+}
+
+.lines {
+    display: flex;
+    flex-direction: row;
+    gap:20px
+}
+
+select {
+    font-size: 14px;      
+    background-color: lightblue;      
+    width: 120px;         
+    height: 32px;         
+    position: relative;
+    top: -12px;
+}
+
+.lines svg {
+    width: 40px !important;  /* Le !important va forcer le SVG de 30000px à obéir */
+    height: 40px !important;
+    overflow: hidden;
+}
+
+footer {
+
+    width: 100%;
+    padding: 20px 0;
+    background-color: #9CCBDD;
+}
+
+#languageChange {
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-size: 16px; /* En dessous de 16px sur iOS, ça zoom tout seul ! */
+    padding: 8px 32px 8px 12px;
+    border: 1px solid #ccc;
+    background-color: #ffffff; /* Force le fond en blanc (ou ta couleur) */
+    color: #333333;
+    border-radius: 4px;
+    cursor: pointer;
+}

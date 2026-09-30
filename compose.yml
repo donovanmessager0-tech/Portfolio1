@@ -1,0 +1,8 @@
+services:
+  app:
+    build: .
+    container_name: mon_portfolio
+    ports:
+      - "8080:80"        # 8080 = port sur ton PC, 80 = port interne de Nginx
+    volumes:
+      - .:/usr/share/nginx/html  # Permet le hot-reload (modifs en direct sans rebuild)
